@@ -23,7 +23,9 @@ const config: Config = {
 	  },
 	  backgroundColor:{
 		skin:{
-			base:'var(--color-bg-base)'
+			base:'var(--color-bg-base)',
+			prime:'var(--color-text-prime)',
+
 		}
 	  },
 	  container:{
