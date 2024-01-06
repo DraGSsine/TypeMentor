@@ -26,8 +26,8 @@ export const RestartIcon = (props: IconTypes) => {
     <svg
 	  className={props.className || ""}
       fill={props.fill || "#5074FF"}
-      widths={props.width || "42px"}
-      height={props.height || "42px"}
+      widths={props.width || "25px"}
+      height={props.height || "25px"}
       stroke={props.fill || "#5074FF"}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 50 50"

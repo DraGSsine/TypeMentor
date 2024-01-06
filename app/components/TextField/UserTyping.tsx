@@ -11,7 +11,6 @@ const UserTypings = ({
   className?: string;
 }) => {
   const typedCharacters = userInput.split("");
-
   return (
     <div className={className}>
       {typedCharacters.map((char, index) => (
@@ -38,13 +37,11 @@ const Character = ({
 
   return (
     <span
-      className={
-        cn({
-          "text-red-500": !isCorrect && !isWhiteSpace,
-          "text-primary-400": isCorrect && !isWhiteSpace,
-          "bg-red-500/50": !isCorrect && isWhiteSpace,
-        })
-      }
+      className={cn({
+        "text-red-500": !isCorrect && !isWhiteSpace,
+        "text-primary-400": isCorrect && !isWhiteSpace,
+        "bg-red-500/50": !isCorrect && isWhiteSpace,
+      })}
     >
       {expected}
     </span>

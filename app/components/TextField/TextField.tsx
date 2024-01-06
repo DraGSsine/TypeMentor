@@ -19,7 +19,6 @@ const App = () => {
           className="absolute inset-0"
           words={words}
           userInput={typed}
-		  
         />
       </WordsContainer>
       <RestartButton
@@ -39,9 +38,7 @@ const App = () => {
 
 const WordsContainer = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative text-3xl leading-relaxed mt-3">
-      {children}
-    </div>
+    <div className="relative text-3xl leading-relaxed mt-3 break-all">{children}</div>
   );
 };
 
